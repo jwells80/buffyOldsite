@@ -511,3 +511,14 @@ a:active		{color: white;}
 
 
 
+.ui-tabs .ui-tabs-panel {
+    padding: 10px 3px 5px 3px;
+    display: block;
+    border-width: 0;
+    background: none;
+}
+
+/* So the dialog box doesn't have two sets of scrollbars for #venues_model in Safari/Chrome */
+.ui-dialog .ui-dialog-content {
+    overflow: hidden;
+}
