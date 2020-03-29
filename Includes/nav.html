@@ -1,17 +1,25 @@
-<ul id="navlist" class="mainnav" title="Buffy St. John navigation">
-    <li><a href="/home.html" id="home" title="Buffy St. John Home"><span>Home</span></a></li>
-    <li><a href="/bio.html" id="bio" title="Buffy St. John Bio"><span>Bio</span></a></li>
-    <li><a href="/music.html" id="music" title="Buffy St. John Music"><span>Music</span></a></li>
-    <li><a href="/press.html" id="press" title="Buffy St. John Press"><span>Press</span></a></li>
-    <li><a href="/news.html" id="news" title="Buffy St. John News"><span>News</span></a></li>
-    <!-- <li><a href="/contact.html" id="contact" title="Buffy St. John Contact"><span>Contact</span></a></li> -->
-<!--     <li><a href="/calendar.html" id="calendar" title="Buffy St. John Calendar"><span>Calendar</span></a></li> -->
-    <li><a href="/photos.html" id="photos" title="Buffy St. John Photos"><span>Photos</span></a></li>
-    <li><a href="/products.html" id="products" title="Buffy St. John Buy"><span>Buy</span></a></li>
-    <li><a href="/links.html" id="links" title="Buffy St. John Links"><span>Links</span></a></li>
-    <li><a href="/blog.html" id="blog" title="Buffy St. John Blog"><span>Blog</span></a></li>
-  </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Buffy St.John</a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+   </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" title="Buffy St. John navigation">
+            <li class="nav-item"><a href="/home.html" class="nav-link" id="home" title="Buffy St. John Home">Home</a></li>
+            <li class="nav-item"><a href="/bio.html" class="nav-link" id="bio" title="Buffy St. John Bio">Bio</a></li>
+            <li class="nav-item"><a href="/music.html" class="nav-link" id="music" title="Buffy St. John Music">Music</a></li>
+            <li class="nav-item"><a href="/press.html" class="nav-link" id="press" title="Buffy St. John Press">Press</a></li>
+            <li class="nav-item"><a href="/news.html" class="nav-link" id="news" title="Buffy St. John News">News</a></li>
+            <!-- <li><a href="/contact.html" id="contact" title="Buffy St. John Contact"><span>Contact</span></a></li> -->
+        <!--     <li><a href="/calendar.html" id="calendar" title="Buffy St. John Calendar"><span>Calendar</span></a></li> -->
+            <li class="nav-item"><a href="/photos.html" class="nav-link" id="photos" title="Buffy St. John Photos">Photos</a></li>
+            <li class="nav-item"><a href="/products.html" class="nav-link" id="products" title="Buffy St. John Buy">Buy</a></li>
+            <li class="nav-item"><a href="/links.html" class="nav-link" id="links" title="Buffy St. John Links">Links</a></li>
+            <li class="nav-item"><a href="/blog.html" class="nav-link" id="blog" title="Buffy St. John Blog">Blog</a></li class="nav-item">
+        </ul>
+    </div>
+  </nav>
   <script>
       var idName = $('body').attr('class');
-      $('#' + idName).addClass('highlight');
+      $('#' + idName).addClass('active');
   </script>

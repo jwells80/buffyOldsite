@@ -9,27 +9,8 @@
 */
 
 /* --- GLOBAL PAGE SETTINGS --------------------------------------------------------- */
-
-html, body, div	{margin: 0; padding: 0}		/* clears block margins/padding */
-img					{border: none;}				/* clears all image borders */
-
-/* (mostly) firefox defaults, for other browser's benefit */
-
-p, blockquote 		{margin: 1em 0;}	
-ul, ol 				{margin: 1em 0 1em 35px; padding: 0;} 
-h2						{margin: .83em 0;}
-h3						{margin: 1em 0;}	
-
-            
+         
 /* --- GENERAL PAGE LAYOUT -------------------------------------------------------------- */
-
-html {
-  background: #d1dfe1 url(/shared/digital/background-blue.gif) center 264px repeat-x;
-}
-body {
-    background: url(/shared/digital/banner-blue.jpg) top center repeat-x;
-    text-align: left;	
-      }
 
 
 /* ACCESSIBILITY */			
@@ -42,7 +23,8 @@ left: 50%;
 margin-left: -455px;
 width: 190px;
 height: 150px;
-background: url(/images/worshiphim-cropped-bandlogo.jpg) center center no-repeat;
+
+
 text-indent: -9999px;
 z-index: 400;
 }	
@@ -56,154 +38,54 @@ width: 970px;
 margin: 0 auto;
   }
 
-    
-/* BANNER */
-
-/* This div places the background for the tops of both #navigation and #content */	
-#banner {
-padding: 90px 0 15px 275px;
-background: url(/shared/digital/navcontenttop-gray.png) center 54px no-repeat;
+  
+  
+#banner img{
+    position: absolute;
+    width: 200px;
+    background: #D9D9D9;
+    padding: 20px;
+    border-radius: 15px;
 }
-/* Ultra-Safe Hack for IE6: replaces alpha-transparent PNG with transparent GIF */
-* html #banner {
-    _background: url(/shared/digital/navcontenttop-gray.gif) center 54px no-repeat;		
-    }		
 
-/* Photo - This is the band name at the top of the page */
-#banner .photo {
-    width: 658px;
-    margin-bottom: 15px;
-    padding: 5px 0;
-    border: 1px solid #8da7ab;
-    background: url(/shared/digital/bandname-blue.png) top left repeat-y;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    }
-
-/* Band - This is the photo at the top of the page */
-#banner .band {
-    width: 658px;
-    border: 1px solid black;
-    }
-    #banner .band span {
-        display: block;
-        height: 175px;
-        margin: 10px;
-background: url(/images/SwordLogo-cropped-bandphoto.jpg);
-        text-indent: -9999px;
-        }
-
-        
-/* NAVIGATION */	
-
-#navigation {
-float: left;
-width: 220px;
-margin-top: 239px;	
-padding: 0 10px 0 15px;
-background: url(/shared/digital/navigation-gray.png) top left repeat-y;
-display: inline;			/* cures IE6 doubled-margin float bug */
-}				
-/* Ultra-Safe Hack for IE6: replaces alpha-transparent PNG with transparent GIF */
-* html #navigation {
-    _background: url(/shared/digital/navigation-gray.gif) top left repeat-y;		
-    }		
-
-#navigation ul {
-    margin: 0; 
-    padding: 0 15px;
-    font-size: 14px;
-    text-align: center;
-    list-style: none;
-    }
-    #navigation li {
-        }
-        #navigation li a {
-            display: block;
-            margin-top: 10px;
-            padding: 4px 3px;
-            line-height: 22px;
-            }
-            /* Ultra-Safe Hack for IE6: gives hasLayout, preventing a spacing bug */
-            * html #navigation li a {
-                _height: 1px;				/* this gives IE6 hasLayout without affecting layout */
-                }
-
-        
 /* CONTENT */
             
 #content {
 min-height: 350px;
 margin: 0 0 0 245px;
 padding: 1px 35px 15px 30px;		/* padding-top: 1px prevents margin collapsing */
-background: url(/shared/digital/content-gray.png) top left repeat-y;
+background: #D9D9D9;
+border-radius: 0 0 15px 15px;
 }
-/* Ultra-Safe Hack for IE6: applies min-height, replaces alpha-transparent PNG with transparent GIF */
-* html #content {
-    _height: 350px;			/* IE6 treats this as min-height */
-    _background: url(/shared/digital/content-gray.gif) top left repeat-y;	
-    }		
+	
 
 
-/* EMAIL SIGNUP */
-
-#emailsignup {
-clear: both;					/* always stays below #navigation */
-float: left;
-width: 220px;
-padding: 40px 10px 0 15px;
-height: 80px;
-background: url(/shared/digital/emailsignup-gray.png) bottom left no-repeat;
-text-align: center;
-display: inline;				/* cures IE6 doubled-margin float bug */
-}		
-/* Ultra-Safe Hack for IE6: replaces alpha-transparent PNG with transparent GIF */
-* html #emailsignup {
-    _background: url(/shared/digital/emailsignup-gray.gif) top left repeat-y;		
-    }		
 
 
 /* FOOTER */
 
 #footer 	{
-height: 60px;
-margin-left: 245px;
-padding-left: 30px;
-background: url(/shared/digital/footer-gray.png) bottom left no-repeat;
+    width: 100%;
+    background: rgba(217,217,217, .5);
+    margin-top: 30px;
+
+
+
 }
-/* Ultra-Safe Hack for IE6: replaces alpha-transparent PNG with transparent GIF */
-* html #footer {
-    _background: url(/shared/digital/footer-gray.gif) bottom left no-repeat;		
-    }		
 #footer p {
     width: 658px;
-    margin: 0 15px 0 0;
-    padding: 4px 0 6px 0;
-    border: 1px solid #8da7ab;
-    background: url(/shared/digital/bandname-blue.png) top left repeat-y;
     color: #666 !important;
     font-weight: bold;
     font-style: italic;
     text-align: center;
     }
 
-/* FIXES FOR IE6 3px FLOAT OFFSET BUG */		
-
-* html #banner .photo,
-* html #banner .band,
-* html #content {
-_position: relative;
-_left: -3px;				/* moves #content 3px to the left, where it should be */
-_margin-right: -3px;		/* restores lost 3px of #content width */
-}		
-
-        
+      
 /* --- Text Styles & Minor Placement Adjustments ------------------------------- */
 
 body {
 color: black;
-font: 11px Verdana, Arial, sans-serif;
+
 }
 
 h1 {
@@ -243,55 +125,13 @@ text-transform: uppercase;
 /* --- Link Styling & Form Elements ------------------------------------------------ */
 
 /* general links */
-a				{font-weight: bold; text-decoration: underline;}
+a				{font-weight: bold;}
 a:link 		{color: #72888c;}	
 a:visited	{color: #8ba5aa;}
 a:hover 		{color: #596d80;}	
 a:active		{color: white;}
     
-/* navigation links */
-#navigation li a 				{text-decoration: none;}
-#navigation li a:link 		{color: white; background: #98b5ba;}
-#navigation li a:visited	{color: white; background: #98b5ba;}
-#navigation li a:hover 		{color: white; background-color: #8faaaf;}
-#navigation li a:active		{color: black;}
 
-#navigation li a span {
-    }
-    #navigation li a:hover span {
-        }
-        
-/* highlight current page */
-#navigation li a.highlight {
-    background: #596d80 !important;
-    }
-    #navigation li a.highlight span {
-        }
-
-/* email signup form elements */
-#emailsignup form {
-color: #203954;
-font: bold 13px Verdana, Arial, sans-serif;
-line-height: 1.5;
-text-transform: uppercase;
-}
-/* this affects both the entry box and the button */
-#emailsignup input {
-    width: 50px;
-    }
-    #emailsignup input:hover {
-        }
-/* this is the entry box */
-#emailsignup input#list_email {
-    width: 100px;
-    margin-right: 4px;
-    color: #666;
-    background: #eee;
-    }	
-    #emailsignup input#list_email:focus {
-        color: #444 !important;
-        background: #f6f6f6 !important;		/* makes entry field slightly lighter when it has focus */
-        }	
 
 /* --- PAGE-SPECIFIC STYLES --------------------------------------------------------------------------------- */
 
@@ -304,28 +144,6 @@ text-transform: uppercase;
 display: block;
 margin: 1em 0;
 }
-
-/* CONTACT */
-.contact .name			{font-weight: bold;}
-.contact .entry ul 	{list-style: none;}
-.contact .entry li	{padding-bottom: .15em;}	
-
-/* CALENDAR */
-#calendar .entry {
-margin: 0 0 2.3em 0;
-}
-/* Ultra-Safe Hack for IE6: gives hasLayout, curing potential rendering bugs */
-* html #calendar .entry {
-    _height: 1px;					/* doesn't affect layout since IE6 treats this as min-height */
-    }
-
-#calendar .entry .details {
-    margin-left: 20px;
-    }
-    #calendar .entry h4 {
-        font-size: 1em;
-        margin-bottom: 0.5em;
-        }
 
 /* LINKS */
 .links h3 {
@@ -362,116 +180,9 @@ color: black;
 font-weight: bold;
 }
 
-/* GUESTBOOK */
-/* guestbook entry form */
-#postForm 	{
-width: 400px;
-margin: 18px auto 25px auto;
-}
-/* general entry fields */
-#postForm input#gbname,
-#postForm input#gbaddress,
-#postForm textarea,
-#postForm input#security_code {
-    display: block;
-    width: 388px;
-    padding: 2px 5px;
-    border: 1px solid #aaa;
-    color: #666;
-    background: #f6f6f6;
-    margin-bottom: 10px;
-    }
-    #postForm textarea {
-        height: 100px;
-        margin-bottom: 0 !important;		/* forces browser constistency */
-        overflow-y: auto;						/* auto-hides scrollbar in ie */
-        }
-    #postForm input#gbname:focus,
-    #postForm input#gbaddress:focus,
-    #postForm textarea:focus,
-    #postForm input#security_code:focus {
-        color: #444 !important;
-        background: #eee !important;		/* makes entry field slightly darker when it has focus */
-        }	
-
-/* captcha image */	
-#postForm #gbimage {
-    position: absolute;
-    margin-top: 10px;							/* replaces lost margin-bottom from #gbcomment */
-    }
-/* captcha "security code" text label */	
-#postForm .security_code_label {
-    display: block;
-    margin-top: 10px;							/* replaces lost margin-bottom from #gbcomment */
-    width: 220px !important;
-    margin-left: 120px;
-    }
-/* captcha entry field */	
-#postForm input#security_code {
-    width: 268px !important;
-    margin-left: 120px;
-    }
-/* submit button */
-#postForm input[type="submit"] {
-    margin-top: 10px;
-    width: 400px;
-    }
-
-/* previous guestbook entries */		
-#guestbook .entry	{
-padding: 2px 10px 2px 5px;
-margin-bottom: 10px;
-}				
-#guestbook .entry h2	{
-    font-size: 100%;
-    color: #81807E;
-    padding-bottom: 4px;
-    margin-bottom: 0;
-    border-bottom: 1px solid #B9B8B7;
-    }
-#guestbook .entry h3	{
-    font-size: 85%;
-    color: #81807E;
-    text-align: right;
-    margin: 0; padding: 0;
-    }
-
-    
 /* --- VARIATION ------------------------------------------------------------------------------------------- */
 /* --- VARIATION ------------------------------------------------------------------------------------------- */
 
-
-html 	{background: #7c7d7d url(/shared/digital/background-red.gif) center 264px repeat-x;}
-body 	{background: url(/shared/digital/banner-red.jpg) top center repeat-x;}
-
-#banner {background: url(/shared/digital/navcontenttop-gray.png) center 54px no-repeat;}
-* html #banner	{_background: url(/shared/digital/navcontenttop-gray.gif) center 54px no-repeat;}		
-
-#banner .photo {
-    color: white;
-    border: 1px solid #581815;
-    background: url(/shared/digital/bandname-red.png) top left repeat-y;
-    }
-
-#banner .band {border: 1px solid black;}
-        
-#navigation {background: url(/shared/digital/navigation-gray.png) top left repeat-y;}				
-* html #navigation {_background: url(/shared/digital/navigation-gray.gif) top left repeat-y;}		
-
-#content {background: url(/shared/digital/content-gray.png) top left repeat-y;}
-* html #content {_background: url(/shared/digital/content-gray.gif) top left repeat-y;}		
-
-#emailsignup {background: url(/shared/digital/emailsignup-gray.png) bottom left no-repeat;}		
-* html #emailsignup {_background: url(/shared/digital/emailsignup-gray.gif) top left repeat-y;}		
-
-#footer 	{background: url(/shared/digital/footer-gray.png) bottom left no-repeat;}
-* html #footer {_background: url(/shared/digital/footer-gray.gif) bottom left no-repeat;}		
-
-#footer p {
-    color: white !important;
-    border: 1px solid #581815;
-    background: url(/shared/digital/bandname-red.png) top left repeat-y;
-    }
 
 /* --- Text Styles & Minor Placement Adjustments ------------------------------- */
 
@@ -490,35 +201,13 @@ h3 {color: #d71915;}
 /* --- Link Styling & Form Elements ------------------------------------------------ */
 
 /* general links */
-a				{font-weight: bold; text-decoration: underline;}
+a				{font-weight: bold; }
 a:link 		{color: #b9180e;}	
 a:visited	{color: #c7605a;}
 a:hover 		{color: #e10d00;}	
 a:active		{color: white;}
     
-/* navigation links */
-#navigation li a 				{text-decoration: none;}
-#navigation li a:link 		{color: white; background: #757576;}
-#navigation li a:visited	{color: white; background: #757576;}
-#navigation li a:hover 		{color: white; background-color: #666;}
-#navigation li a:active		{color: black;}
-
-/* highlight current page */
-#navigation li a.highlight {background: #d81915 !important;}
-
-/* email signup form elements */
-#emailsignup form {color: #900b02;}
-
-
-
-.ui-tabs .ui-tabs-panel {
-    padding: 10px 3px 5px 3px;
-    display: block;
-    border-width: 0;
-    background: none;
-}
-
-/* So the dialog box doesn't have two sets of scrollbars for #venues_model in Safari/Chrome */
-.ui-dialog .ui-dialog-content {
-    overflow: hidden;
+body{
+    background: url(/images/reflection.jpg) fixed no-repeat;
+    background-size: cover;
 }
