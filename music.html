@@ -1,7 +1,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" dir="ltr">
-<script type="text/javascript" src="/shared/lib/js/jquery-min.js"></script>
-<script src="/assets/scripts/app.js"></script>
-<head></head>
+
+<script src="assets/scripts/app.js"></script>
+<link rel="stylesheet" href="/assets/css/audio-player.css">
+<head>
+
+
+</head>
     
     <body id="hostbaby" class="music" cz-shortcut-listen="true">
     
@@ -32,89 +36,52 @@
             <div id="contenttop2"><span></span></div>
     
             <h1 title="Buffy St. John: Music"><span>Buffy St. John: Music</span></h1>
-            
-            
-    
-                <h3>I Go To The Rock</h3>	<div class="details">
-            <div class="artist">(Buffy St. John)</div>
-                    <div class="caption">Dottie Rambo</div>
-                    <ul title="Audio for I Go To The Rock">
-                        <li><span id="button_m3u_hifi_1"></span>
-                    <a href="/audio/BUFFY_ST_JOHN-I_Go_To_The_Ro_hifi.m3u" id="m3u_hifi_1" class="m3u_hifi" onclick="return loadButtonPlayer(this);" title="I Go To The Rock">MP3 play whole song, hi-fi (broadband)</a></li>
+            <div class="simple-audio-player" id="simp" data-config='{"shide_top":false,"shide_btm":false,"auto_load":false}'>
+                <div class="simp-playlist">
+                    <ul>
+                        <li>
+                            <span class="simp-source" data-src="/audio/01-I_Go_To_The_Rock.mp3">I Go To The Rock</span>
+                            <span class="simp-desc">Buffy St. John (Dottie Rambo)</span>
+                        </li>
+                        <li>
+                            <span class="simp-source" data-src="/audio/02-That_Voice.mp3">That Voice</span>
+                            <span class="simp-desc">Buffy St. John (Raymond Davis, Wayne Haun)</span>
+                        </li>
+                        <li>
+                            <span class="simp-source" data-src="/audio/03-I_Must_Tell_Jesus.mp3">I Must Tell Jesus</span>
+                            <span class="simp-desc">Buffy St. John (Elisha Hoffman arr: Anna Laura Page)</span>
+                        </li>
+                        <li>
+                            <span class="simp-source" data-src="/audio/04-I_Still_Believe_In_The_Church.mp3">I Still Believe In The Church</span>
+                            <span class="simp-desc">Buffy St. John (Raymond Davis, Toni Jolene Clay)</span>
+                        </li>
+                        <li>
+                            <span class="simp-source" data-src="/audio/05-Operator.mp3">Operator</span>
+                            <span class="simp-desc">Buffy St. John (W. Spivery)</span>
+                        </li>
+                        <li>
+                            <span class="simp-source" data-src="/audio/06-That's_Why_They_Call_It_Grace.mp3">That's Why They Call It Grace</span>
+                            <span class="simp-desc">Buffy St. John (Chaz Bosarge, Phil Johnson)</span>
+                        </li>
+                        <li>
+                            <span class="simp-source" data-src="/audio/07-The_Lamb_Has_Overcome.mp3">The Lamb Has Overcome</span>
+                            <span class="simp-desc">Buffy St. John (Carol Cymbala)</span>
+                        </li>
+                        <li>
+                            <span class="simp-source" data-src="/audio/08-Oh_Happy_Day.mp3">Oh Happy Day</span>
+                            <span class="simp-desc">Buffy St. John (Edwin R. Hawkins)</span>
+                        </li>
+                        <li>
+                            <span class="simp-source" data-src="/audio/09-The_Blood_Will_Never_lose_Its_Power.mp3">The Blood Will Never lose Its Power</span>
+                            <span class="simp-desc">Buffy St. John (Andrae Crouch)</span>
+                        </li>
+                        <li>
+                            <span class="simp-source" data-src="/audio/10-His_Eye_Is_On_The_Sparrow.mp3">His Eye Is On The Sparrow</span>
+                            <span class="simp-desc">Buffy St. John (Charles Gabriel, C. D. Martin)</span>
+                        </li>
                     </ul>
-                    </div>
-                <h3>That Voice</h3>	<div class="details">
-            <div class="artist">(Buffy St. John)</div>
-                    <div class="caption">Raymond Davis, Wayne Haun</div>
-                    <ul title="Audio for That Voice">
-                        <li><span id="button_m3u_hifi_2"></span>
-                    <a href="/audio/BUFFY_ST_JOHN-That_Voice_hifi.m3u" id="m3u_hifi_2" class="m3u_hifi" onclick="return loadButtonPlayer(this);" title="That Voice">MP3 play whole song, hi-fi (broadband)</a></li>
-                    </ul>
-                    </div>
-                <h3>I Must Tell Jesus</h3>	<div class="details">
-            <div class="artist">(Buffy St. John)</div>
-                    <div class="caption">Elisha Hoffman arr: Anna Laura Page</div>
-                    <ul title="Audio for I Must Tell Jesus">
-                        <li><span id="button_m3u_hifi_3"></span>
-                    <a href="/audio/BUFFY_ST_JOHN-I_Must_Tell_Je_hifi.m3u" id="m3u_hifi_3" class="m3u_hifi" onclick="return loadButtonPlayer(this);" title="I Must Tell Jesus">MP3 play whole song, hi-fi (broadband)</a></li>
-                    </ul>
-                    </div>
-                <h3>I Still Believe In The Church</h3>	<div class="details">
-            <div class="artist">(Buffy St. John)</div>
-                    <div class="caption">Raymond Davis, Toni Jolene Clay</div>
-                    <ul title="Audio for I Still Believe In The Church">
-                        <li><span id="button_m3u_hifi_4"></span>
-                    <a href="/audio/BUFFY_ST_JOHN-I_Still_Believ_hifi.m3u" id="m3u_hifi_4" class="m3u_hifi" onclick="return loadButtonPlayer(this);" title="I Still Believe In The Church">MP3 play whole song, hi-fi (broadband)</a></li>
-                    </ul>
-                    </div>
-                <h3>Operator</h3>	<div class="details">
-            <div class="artist">(Buffy St. John)</div>
-                    <div class="caption">W. Spivery</div>
-                    <ul title="Audio for Operator">
-                        <li><span id="button_m3u_hifi_5"></span>
-                    <a href="/audio/BUFFY_ST_JOHN-Operator_hifi.m3u" id="m3u_hifi_5" class="m3u_hifi" onclick="return loadButtonPlayer(this);" title="Operator">MP3 play whole song, hi-fi (broadband)</a></li>
-                    </ul>
-                    </div>
-                <h3>That's Why They Call It Grace</h3>	<div class="details">
-            <div class="artist">(Buffy St. John)</div>
-                    <div class="caption">Chaz Bosarge, Phil Johnson</div>
-                    <ul title="Audio for That's Why They Call It Grace">
-                        <li><span id="button_m3u_hifi_6"></span>
-                    <a href="/audio/BUFFY_ST_JOHN-Thats_Why_They_hifi.m3u" id="m3u_hifi_6" class="m3u_hifi" onclick="return loadButtonPlayer(this);" title="That's Why They Call It Grace">MP3 play whole song, hi-fi (broadband)</a></li>
-                    </ul>
-                    </div>
-                <h3>The Lamb Has Overcome</h3>	<div class="details">
-            <div class="artist">(Buffy St. John)</div>
-                    <div class="caption">Carol Cymbala</div>
-                    <ul title="Audio for The Lamb Has Overcome">
-                        <li><span id="button_m3u_hifi_7"></span>
-                    <a href="/audio/BUFFY_ST_JOHN-The_Lamb_Has_hifi.m3u" id="m3u_hifi_7" class="m3u_hifi" onclick="return loadButtonPlayer(this);" title="The Lamb Has Overcome">MP3 play whole song, hi-fi (broadband)</a></li>
-                    </ul>
-                    </div>
-                <h3>Oh Happy Day</h3>	<div class="details">
-            <div class="artist">(Buffy St. John)</div>
-                    <div class="caption">Edwin R. Hawkins</div>
-                    <ul title="Audio for Oh Happy Day">
-                        <li><span id="button_m3u_hifi_8"></span>
-                    <a href="/audio/BUFFY_ST_JOHN-Oh_Happy_Day_hifi.m3u" id="m3u_hifi_8" class="m3u_hifi" onclick="return loadButtonPlayer(this);" title="Oh Happy Day">MP3 play whole song, hi-fi (broadband)</a></li>
-                    </ul>
-                    </div>
-                <h3>The Blood Will Never lose Its Power</h3>	<div class="details">
-            <div class="artist">(Buffy St. John)</div>
-                    <div class="caption">Andrae Crouch</div>
-                    <ul title="Audio for The Blood Will Never lose Its Power">
-                        <li><span id="button_m3u_hifi_9"></span>
-                    <a href="/audio/BUFFY_ST_JOHN-The_Blood_Will_hifi.m3u" id="m3u_hifi_9" class="m3u_hifi" onclick="return loadButtonPlayer(this);" title="The Blood Will Never lose Its Power">MP3 play whole song, hi-fi (broadband)</a></li>
-                    </ul>
-                    </div>
-                <h3>His Eye Is On The Sparrow</h3>	<div class="details">
-            <div class="artist">(Buffy St. John)</div>
-                    <div class="caption">Charles Gabriel, C. D. Martin</div>
-                    <ul title="Audio for His Eye Is On The Sparrow">
-                        <li><span id="button_m3u_hifi_10"></span>
-                    <a href="/audio/BUFFY_ST_JOHN-His_Eye_Is_On__hifi.m3u" id="m3u_hifi_10" class="m3u_hifi" onclick="return loadButtonPlayer(this);" title="His Eye Is On The Sparrow">MP3 play whole song, hi-fi (broadband)</a></li>
-                    </ul>
-                    </div>
+                </div>
+            </div>
     
             
             
@@ -133,6 +100,6 @@
     <div id="bodybottom1"><span></span></div>
     <div id="bodybottom2"><span></span></div>
     
-    
+    <script src="/assets/scripts/audio-player.js"></script>
     
 </body></html>
